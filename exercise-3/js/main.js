@@ -25,6 +25,15 @@ $(function() {
 
 
 		// Append all non-data placeholder elements for you chart (svg, g, axis labels, axes), but do not call the axis functions that render them.
+		var mySvg = d3.select("#viz")
+					.append("svg");
+
+		var rectangles = mySvg.append("g");
+		var xAxis = mySvg.append("g");
+		var yAxis = mySvg.append("g");
+
+		var xAxisText = mySvg.append("text");
+		var yAxisText = mySvg.append("text");
 
 
 		// Write a function for setting the scales based on the current data selection.
